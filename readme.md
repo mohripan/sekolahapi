@@ -1,19 +1,19 @@
 # sekolahapi
 ![alt text](https://github.com/mohripan/sekolahapi/blob/master/hasil.jpg)
 
-##Pengertian
+## Pengertian
 Sekolah API adalah project yang dibuat menggunakan laravel dengan lumen-API yang merupakan sebuah framework modern lainnya menggunakan **composer** untuk mengelola *dependency (package)* yang berada di dalamnya. Bisa dikatakan, lumen-API ini digunakan untuk memudahkan kita sebagai *developer* untuk membuat sebuah API.
 
-##Cara Install
+## Cara Install
 1. Buka **cmd** yang berada di pc/laptop kalian, lalu arahkan ke folder yang akan digunakan untuk menginstall project.
 2. Ketik `composer create-project laravel/lumen nama-project --prefer-dist`
 3. Tunggu beberapa saat, lalu buka projectnya.
 
-##Bedah Coding
+## Bedah Coding
 1. Membuat database terlebih dahulu yang bernama *api_sekolah* (Bisa menggunakan *pypmyadmin* atau aplikasi yang lain)
 2. Buka .env, lalu edit kodingan
 
-###Sebelum
+### Sebelum
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -23,7 +23,7 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
-###Sesudah
+### Sesudah
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -219,7 +219,7 @@ class KelasController extends Controller
 }
 
 ```
-###Pengertian dalam KelasController
+### Pengertian dalam KelasController
 1. Hal yang pertama kita lakukan adalah tentu saja mengimport beberapa komponen yang dibutuhkan.
 2. Lalu, setelah itu kita membuat beberapa function yang berfungsi untuk menambah, mengupdate dan menghapus data di dalam table t_kelas.
 3. Jika kita teliti lagi, di dalam kode itu terdapat handling untuk menangani error. Handling tersebut dapat dicoba di dalam sebuah software yang bernama *postman* untuk mencoba apakah project yang kita buat dapat berjalan dengan lancar, dan apakah handling yang kita buat berjalan dengan baik atau tidak.
